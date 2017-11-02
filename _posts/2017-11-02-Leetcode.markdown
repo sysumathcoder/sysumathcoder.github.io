@@ -1,15 +1,16 @@
 ---
 layout:     post
-title:      "Welcome to Hux Blog"
+title:      "Welcome to XC Blog"
 subtitle:   " \"Hello World, Hello Blog\""
-date:       2015-01-29 12:00:00
-author:     "Hux"
+date:       2017-11-02 12:00:00
+author:     "XC"
 header-img: "img/post-bg-2015.jpg"
 tags:
-- 生活
+    - Leetcode
 ---
 
 > “Move on. ”
+
 ## No.46 Permutations
 * Permutation DFS类型
 * https://discuss.leetcode.com/topic/46162/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partioning
