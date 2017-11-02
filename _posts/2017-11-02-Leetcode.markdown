@@ -2,7 +2,7 @@
 layout:     post
 title:      "Welcome to XC Blog"
 subtitle:   " \"Hello World, Hello Blog\""
-date:       2017-11-02 12:00:00
+date:       2017-11-02 2:00:00
 author:     "XC"
 header-img: "img/post-bg-2015.jpg"
 tags:
@@ -11,11 +11,12 @@ tags:
 
 > “Move on. ”
 
-## No.46 Permutations
+### No.46 Permutations
 * Permutation DFS类型
 * https://discuss.leetcode.com/topic/46162/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partioning
 
-# No.48
+
+### No.48
 * zip(*matrix[::-1])
 * [~ i ] = [n - 1 - i]
 * https://wiki.python.org/moin/BitwiseOperators
@@ -25,8 +26,6 @@ class Solution:
     def rotate(self, A):
         A[:] = map(list, zip(*A[::-1]))
 ```
-
-
 
 ```python
 class Solution:
@@ -39,8 +38,6 @@ class Solution:
                 i = ~j
 ```
 
-
-
 ```python
 class Solution:
     def rotate(self, A):
@@ -50,15 +47,8 @@ class Solution:
                 A[i][j], A[j][i] = A[j][i], A[i][j]
 ```
 
----
 
----
-
-                
-
-
-
-## No.77 Combinations
+### No.77 Combinations
 
 ```python
 class Solution(object):
@@ -80,7 +70,9 @@ class Solution(object):
             res+=part
         return res
 ```
-## No.78
+
+
+### No.78
 
 * DFS recursively 
 
@@ -124,7 +116,8 @@ def subsets(self, nums):
     return res
 ```
 
-## No.79 Word Search
+
+### No.79 Word Search
 
 ```python
 class Solution(object):
@@ -182,7 +175,9 @@ class Solution(object):
 
         return False
 ```
-## No. 86 Partition List
+
+
+### No. 86 Partition List
 
 ```python
 def partition(self, head, x):
@@ -202,7 +197,8 @@ def partition(self, head, x):
 ```
 Suppose the list is 2->1, if you don't set l2.next = None, there will be a loop: 1->2 and 2 connects to 1 again
 
-## No.89 Gray Code
+
+### No.89 Gray Code
 
 ```java
 class Solution {
@@ -213,7 +209,9 @@ class Solution {
     }
 }
 ```
-## [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/)
+
+
+### [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/)
 Reverse a linked list from position m to n. Do it in-place and in one-pass.
 For example:
 Given 1->2->3->4->5->NULL, m = 2 and n = 4,
@@ -285,7 +283,9 @@ class Solution {
     }
 }
 ```
-## [139. Word Break](https://leetcode.com/problems/word-break/description/)
+
+
+### [139. Word Break](https://leetcode.com/problems/word-break/description/)
 ```java
 public class Solution {
     public class TrieNode {
@@ -330,7 +330,9 @@ public class Solution {
     }
 }
 ```
-## [151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/description/)
+
+
+### [151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/description/)
 ```python
 class Solution(object):
     def reverseWords(self, s):
@@ -365,7 +367,9 @@ class Solution(object):
                 break
         return res
 ```
-## [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)
+
+
+### [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)
 ```python
 class Solution(object):
     def findMin(self, nums):
@@ -388,7 +392,9 @@ class Solution(object):
                 
         return nums[lo]
 ```
-## [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/description/)
+
+
+### [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/description/)
 ```python
 class Solution(object):
     def getIntersectionNode(self, headA, headB):
@@ -415,7 +421,8 @@ class Solution(object):
         return pa
 ```
 
-## No.206 Reverse Linked List  
+
+### No.206 Reverse Linked List  
 
 ```python
 class Solution(object):
@@ -437,7 +444,9 @@ class Solution(object):
             cur.next = prev
         return cur
 ```
-## [219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/description/)
+
+
+### [219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/description/)
 
 
 ```python
@@ -460,14 +469,18 @@ class Solution(object):
                 return True
         return False
 ```
-## [223. Rectangle Area](https://leetcode.com/problems/rectangle-area/description/)
+
+
+### [223. Rectangle Area](https://leetcode.com/problems/rectangle-area/description/)
 
 ```python
 def computeArea(self, A, B, C, D, E, F, G, H):
     overlap = max(min(C,G)-max(A,E), 0)*max(min(D,H)-max(B,F), 0)
     return (A-C)*(B-D) + (E-G)*(F-H) - overlap
 ```
-## [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/description/)
+
+
+### [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/description/)
 
 ```python
 class Solution:
@@ -486,7 +499,9 @@ class Solution:
             p = p * nums[i]
         return output
 ```
-## No.258 Add Digits
+
+
+### No.258 Add Digits
 
 ```python
 class Solution(object):
@@ -501,7 +516,9 @@ class Solution(object):
                 num=9
         return num
 ```
-## [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/)
+
+
+### [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/)
 
 ```java
  public int lengthOfLIS(int[] nums) 
@@ -561,7 +578,9 @@ def lengthOfLIS(self, nums):
         size = max(i + 1, size)
     return size
 ```
-## [No.371 Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/description/)
+
+
+### [No.371 Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/description/)
 
 ```python
 from math import log
@@ -580,7 +599,9 @@ class Solution(object):
         return a if a<=Max else ~(a^mask)
 ```
 https://discuss.leetcode.com/topic/51999/python-solution-with-no-completely-bit-manipulation-guaranteed/2
-## [384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/description/)
+
+
+### [384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/description/)
 
 ```python
 import random
@@ -611,7 +632,9 @@ class Solution(object):
         return shuffled_array
 ```
 copy
-## [No.388 Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/description/)
+
+
+### [No.388 Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/description/)
 
 ```python
 def lengthLongestPath(self, input):
@@ -626,7 +649,7 @@ def lengthLongestPath(self, input):
             pathlen[depth + 1] = pathlen[depth] + len(name) + 1
     return maxlen
 ```
-## No.458 Poor Pigs
+### No.458 Poor Pigs
 With 2 pigs, poison killing in 15 minutes, and having 60 minutes, we can find the poison in up to 25 buckets in the following way. Arrange the buckets in a 5×5 square:
 
  
@@ -654,7 +677,9 @@ def poorPigs(self, buckets, minutesToDie, minutesToTest):
         pigs += 1
     return pigs
 ```
-## No.516 Longest Palindromic Subsequence
+
+
+### No.516 Longest Palindromic Subsequence
 
 
 ```python
@@ -676,7 +701,8 @@ for (int j = 0; j < n; ++j) {
 return dp[0];
 ```
 
-## No.593 Valid Square
+
+### No.593 Valid Square
 
 ```python
 class Solution(object):
